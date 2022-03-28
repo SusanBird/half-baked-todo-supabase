@@ -38,6 +38,7 @@ export function checkAuth() {
     if (!user) location.replace('../');
 }
 
+//async 
 export function redirectIfLoggedIn() {
     if (await getUser()) {
         location.replace('./todos');
